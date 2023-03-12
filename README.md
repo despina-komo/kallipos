@@ -11,8 +11,21 @@ Files are edited at their respective repos and then imported here:
 The source files are read from the `text` folder,
 which is a git submodule, ie a link to another repo.
 
+You might need to edit the `figure` lua filter to point at the current folder `.`
+
 There is a bash script `make_latex.sh` which can be modified
 in order to prepare the desired output format.
+
+The bash file has been prepared for MacOS X cli.
+It has also been tested succesfully in Arch Linux by editing the syntax (or simply removing) the `sed` command
+
+In order to prepare a PDF with the LaTeX toolchain,
+just add a `latex` folder with a template and master file.
+
+Have a look at indicative [latex template](https://github.com/mibook/kallipos/issues/2) and [output PDF](https://github.com/mibook/kallipos/issues/1)
+
+It is strongly advised to use the [official latex install](https://www.tug.org/texlive/quickinstall.html), 
+instead of the latex version in your *nix distribution, and install packages as needed with `tlmgr`
 
 ## Source files preprocessing
 
